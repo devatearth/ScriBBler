@@ -1,28 +1,4 @@
-
-body {
-  background-image: url('../images/background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  align-items: center;
-  justify-content: center;
-}
-#logo {
-	font-family: 'Montez', cursive; 
-	color:blue;
-	font-size: 2.0em;
-}
-#submit-button{
-	padding:10px;
-	border:10px;
-	margin:10px;
-}
-#form{
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
-}.page-button{
+.page-button{
 	display:flex;
 	flex-direction: row;
 	position: absolute;
@@ -31,56 +7,11 @@ body {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	top: 45%;
-    left: 40%;
-    right: 40%;
-    bottom: 40%;
+	top: 50%;
+  bottom: 50%;
+  left: 40%;
+  right:40%;
 }
-.subHeading {
-	font-family: 'Ubuntu Mono', monospace;; 
-	color:black;
-	font-size: 0.5em;
-}
-.headerButton{
-	 color:white;
-	 background-color:blue;
-}
-.headerButtonGroup{
-	 float:right;
-}
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding: 100px 500px 100px 500px;
-  left: 0;
-  top: 0;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.create_modal{
+  width: 150%;
 }
