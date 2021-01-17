@@ -1,11 +1,3 @@
-body {
-  background-image: url('../images/background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  align-items: center;
-  justify-content: center;
-}
 #logo {
 	font-family: 'Montez', cursive;
 	color:blue;
@@ -28,7 +20,7 @@ body {
    padding: 5px;
 }
 .signUpButton{
-  display: :none;
+  display:none;
 
 }
 .modal{
@@ -52,8 +44,10 @@ body {
 }
 /* The Close Button */
 .close {
+  position:absolute;
+  top:1%;
+  right:3%;
   color: #aaaaaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
 }
