@@ -32,7 +32,7 @@ function ShowSignInModal() {
         '<label for="password" >Password</label>' +
         '<input type="password" placeholder="Enter your password" id="password" class="form-control" required></input>' +
         '<br>' +
-        '<button id = "submit-button"class="btn btn-success form-control" >Sign Up</button>' +
+        '<button id = "submit-button"class="btn btn-success form-control" >Sign In</button>' +
         '<span><p style="text-align:center">Not a member? </span><span style="color:blue;cursor:pointer;" onclick=SwitchToSignUpModal()> Sign Up </p></span></form>' +
         '</div>';
     new_div.innerHTML = modal;

@@ -17,7 +17,7 @@
 .row {
     display: flex;
     justify-content: center;
-    margin: 0 -5px;
+    margin: 5px;
 }
 
 
@@ -33,6 +33,10 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #f1f1f1;
     margin: 10px 70px 10px 70px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
 }
 
 
@@ -75,4 +79,19 @@
     bottom: 1%;
     right: 1%;
     cursor: pointer;
+}
+
+.post-warning-button {
+    width: 30%;
+    padding: 10px;
+    margin: 45px;
+}
+
+.post-warning-modal {
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black w/ opacity */
+    text-align: center;
 }
