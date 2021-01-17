@@ -1,0 +1,72 @@
+#postHeading {
+    font: bold;
+    text-align: center;
+}
+
+#postAuthor {
+    font-family: segoe UI;
+    font: bold;
+    margin: 10px;
+}
+
+#postContent {
+    width: 100%;
+    overflow: wrap;
+    font-size: 0.9em;
+    margin: 10px;
+}
+
+.postButton {
+    background-color: rgb(230, 15, 86);
+    position: relative;
+    bottom: 60px;
+    right: 20px;
+}
+
+#btn-save {
+    display: none;
+}
+
+.edit-title {
+    width: 100%;
+    border-color: rgb(236, 19, 92);
+}
+
+.edit-content {
+    width: 100%;
+    border-color: rgb(236, 19, 92);
+}
+
+.like-button {
+    margin-top: 5%;
+    margin-left: 10px;
+    background-color: rgb(230, 15, 86);
+    color: whitesmoke;
+}
+
+.comment-button {
+    display: block;
+    background-color: rgb(230, 15, 86);
+    margin-left: 10px;
+}
+
+.comment-box {
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.comment-showcase,
+.comment-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: gainsboro;
+}
+
+.single-comment {
+    width: 100%;
+    margin: 10px;
+    background-color: white;
+    padding: 10px 10px;
+}

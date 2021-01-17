@@ -1,61 +1,78 @@
-#body{
-  background-color: #ffeedd;
+#body {
+    background-color: #ffeedd;
 }
+
+
 /* Float four columns side by side */
+
 .column {
-  float: left;
-  width: 50%;
-  padding: 0 5px;
+    float: left;
+    width: 50%;
+    padding: 0 5px;
 }
+
 
 /* Remove extra left and right margins, due to padding */
+
 .row {
-  display:flex;    
-  justify-content: center;
-  margin: 0 -5px;
- }
+    display: flex;
+    justify-content: center;
+    margin: 0 -5px;
+}
+
 
 /* Style the counter cards */
+
 .card {
-  display: flexbox;
-  height:165px;
-  overflow: hidden;
-  flex-direction: row;
-  text-align: left;
-  border-radius: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #f1f1f1;
-  margin: 10px 70px 10px 70px ;
+    display: flexbox;
+    height: 165px;
+    overflow: hidden;
+    flex-direction: row;
+    text-align: left;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+    margin: 10px 70px 10px 70px;
 }
+
+
 /* Style the paragraph */
-.paragraph{
-  padding: 20px;
-  overflow: hidden; 
+
+.paragraph {
+    padding: 20px;
+    overflow: hidden;
 }
-.author{
-  padding: 40px 20px 20px 20px;
-  background-color: azure;
-  border-top-left-radius:12px ;
-  border-bottom-left-radius: 12px;;
+
+.author {
+    padding: 40px 20px 20px 20px;
+    background-color: azure;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    ;
 }
-.paraHeading{
-  opacity: 0.7;
-  font-family:verdana;
-  justify-content: center;
-  padding-left: 4%;
-  overflow:wrap;
+
+.paraHeading {
+    opacity: 0.7;
+    font-family: verdana;
+    justify-content: center;
+    padding-left: 4%;
+    overflow: wrap;
 }
-.paraContent{
- padding-bottom: 10px;
+
+.paraContent {
+    padding-bottom: 10px;
 }
-.trash-icon{
-  position: absolute;
-  top:0%;
-  right: 1%;
+
+.trash-icon {
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    cursor: pointer;
 }
-.post-additional{
-  position: absolute;;
-  bottom: 0%;
-  right: 0%;
-  padding:10px 10px 10px 10px;
+
+.post-additional {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    cursor: pointer;
 }
