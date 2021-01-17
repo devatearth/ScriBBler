@@ -1,4 +1,5 @@
 function ShowSignUpModal() {
+    //This function will generate the signUP modal and popup in UI
     var new_div = document.createElement('div');
     var modal = '<div id="modal" class="modal-content">' +
         '<span class="close" onclick = closeModal("signUpModal")>&times;</span>' +
@@ -23,6 +24,7 @@ function ShowSignUpModal() {
 }
 
 function ShowSignInModal() {
+    //This function will generate the signIn modal and popup in UI
     var new_div = document.createElement('div');
     var modal = '<div id="modal" class="modal-content">' +
         '<span class="close" onclick = closeModal("signInModal")>&times;</span>' +
@@ -44,17 +46,20 @@ function ShowSignInModal() {
 }
 
 function closeModal(modal) {
+    //This function will take an id of modal and close it
     var modal = document.getElementById(modal);
     modal.style.display = "none";
 }
 
 function showModal(modal) {
+    //This function will take an id of modal and pops it to UI
     var modal = document.getElementById(modal);
     console.log("triggered");
     modal.style.display = "block";
 }
 
 function switchModal(open, close) {
+    //This function will take 2 parameters 1st modal will be opened by closing 2nd modal
     console.log(open, close);
     var modal = document.getElementById(close);
     modal.style.display = "none";
@@ -62,6 +67,7 @@ function switchModal(open, close) {
 }
 
 function SwitchToSignUpModal() {
+    //This modal will close the signin modal and open up signUP modal
     var signUpModal = document.getElementById('signInModal');
     signUpModal.style.display = 'none';
     ShowSignUpModal();
