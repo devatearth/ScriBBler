@@ -24,47 +24,17 @@
 		<span class = 'subHeading'>Imagine, </span>
 		<span class = 'subHeading'>Create</span>
 		<span class = 'headerButtonGroup'>
-		<button class = 'headerButton' id = 'signUp' onclick='showModal("signUpModal")'>Sign Up</button>
-		<button class = 'headerButton' id = 'signIn'onclick='showModal("signInModal")'>Sign In</button>
+		<button class = 'headerButton' id = 'signUp' onclick='signUpModal()'>Sign Up</button>
+		<button class = 'headerButton' id = 'signIn'onclick='signInModal()'>Sign In</button>
 		</span>
 	</div>
 	<div class="page-button" >
 		<a href="./html/postsList.html"><button  id = 'allPosts' style = "background-color:#e6e600">All Posts</button></a>
 		<button  id = 'createPost' style = "background-color:#e6e600" onclick='showModal("createPostModal")'>Create Post</button>
 	</div>
-<div id="signUpModal" class="modal">
-	  <div id='modal' class="modal-content">
-			<div>
-				<span class="close" onclick = 'closeModal("signUpModal")'>&times;</span>
-				<form id='form'><p>Get Started</p>
-				<label for='name' >Name</label>
-				<input required type='text' placeholder='Enter your name' id='name' class='form-control'></input>
-				<label for='name' >Username</label>
-				<input required type='text' placeholder='Enter your username' id='userName' class='form-control'></input>
-				<label for='name' >Password</label>
-				<input required type='password' placeholder='Enter your password' id='password' class='form-control'></input>
-				<label for='name' >Confirm Password</label>
-				<input required type='password' placeholder='Re-enter your password' id='confirmPassword' class='form-control'></input>
-		  </div>
-			<br>
-		 <button id = 'submit-button'class='btn btn-success form-control' >Sign Up</button> </form>	  </div>
-</div>
-<div id="signInModal" class="modal">
-	  <div id='modal' class="modal-content">
-			<div>
-				<span class="close" onclick = 'closeModal("signInModal")'>&times;</span>
-				<form id='form'><p>Welcome Back!</p>
-				<label for='Username' >Username</label>
-				<input required type='text' placeholder='Enter your username' id='userName' class='form-control'></input>
-				<label for='password' >Password</label>
-				<input type='password' placeholder='Enter your password' id='password' class='form-control' required></input>
-				<br>
-			 <button id = 'submit-button'class='btn btn-success form-control' >Sign Up</button>
-				</form>
-		 </div>
-		<span><p style="text-align:center">Not a member? </span><span style="color:blue;cursor:pointer;" onclick='switchModal("signUpModal","signInModal")'> Sign Up</p></span></form>
-	  </div>
-</div>
+	<!-- Modal population is automated in common.js file. To reduce duplication of code-->
+<div id="signUpModal" class="modal"></div>
+<div id="signInModal" class="modal"></div>
 <div id="createPostModal" class="modal">
 	  <div id='modal' class="modal-content ">
 			<div>
