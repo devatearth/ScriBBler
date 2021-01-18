@@ -3,8 +3,11 @@ function RemoveCard(card_name) {
     var new_div = document.createElement('div');
     var modal = '<div id="modal" class="modal-content post-warning-modal">' +
         '<div id=post-delete-modal><p>Are you sure you want to delete this post?</p>' +
-        '<button id = "submit-button" class="btn btn-success column post-warning-button" onclick=DeleteCard("' + card_name + '")>YES</button>' +
-        '<button id = "submit-button" class="btn btn-danger column post-warning-button" onclick=closeModal("delete_modal")  >NO</button>' +
+        '<div class=row>' +
+        '<button class = "submit-button btn btn-success column post-warning-button" onclick=DeleteCard("' + card_name + '")>YES</button>' +
+        '<button class = "submit-button btn btn-danger column post-warning-button" onclick=closeModal("delete_modal")  >NO</button>' +
+        '</div>' +
+        '</div>' +
         '</div>';
     new_div.innerHTML = modal;
     var signUpModal = document.getElementById('delete_modal');
