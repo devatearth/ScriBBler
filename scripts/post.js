@@ -6,7 +6,7 @@ function loadPost() {
     author.innerHTML = sessionStorage.getItem('author');
     var content = document.getElementById('postContent');
     content.innerHTML = sessionStorage.getItem('content');
-    sessionStorage.setItem('likes_count', 0);
+    sessionStorage.setItem('likes_count', -1);
     showLikes();
 }
 
@@ -50,10 +50,17 @@ function SavePost() {
 function showLikes() {
     //This function will server the like count purpose
     var count = sessionStorage.getItem('likes_count');
-    var tag = count + ' people like this!';
+    if (count == -1) {
+        var tag = 'Be the first one to like this!';
+        count++;
+    } else {
+        count++;
+        var tag = count + ' people like this!';
+        document.getElementById('like-button-inner').innerHTML = '<i class="fa fa-thumbs-o-up" aria-hidden="true" ></i>Liked!';
+    }
     document.getElementById('like-count').innerHTML = tag;
-    count++;
     sessionStorage.setItem('likes_count', count);
+
 }
 
 function AddComment() {
